@@ -21,10 +21,10 @@
 
 ### 21 features (new system + 3 middle points)
 #### 2 dense layers size 10
-- mjpk_15 - accuracy: 0.8513 - avg categories 0.782
-- mjpk_16 - accuracy: 0.8531 - avg categories 0.779
-- mjpk_17 - accuracy: 0.7701 - avg categories 0.711
+- mjpk_12 - accuracy: 0.7685 - avg categories 0.548
+- mjpk_13 - accuracy: 0.8409 - avg categories 0.733
+- mjpk_14 - accuracy: 0.7502 - avg categories 0.525
 #### 2 dense layers size 20
-- mjpk_12 - accuracy: 0.8915 - avg categories 0.846
-- mjpk_13 - accuracy: 0.8860 - avg categories 0.776
-- mjpk_14 - accuracy: 0.8902 - avg categories 0.804
+- mjpk_15 - accuracy: 0.8886 - avg categories 0.804
+- mjpk_16 - accuracy: 0.9041 - avg categories 0.797
+- mjpk_17 - accuracy: 0.9051 - avg categories 0.802

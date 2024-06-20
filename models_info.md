@@ -24,6 +24,8 @@
 - mjpk_12 - accuracy: 0.7685 - avg categories 0.548
 - mjpk_13 - accuracy: 0.8409 - avg categories 0.733
 - mjpk_14 - accuracy: 0.7502 - avg categories 0.525
+- mjpk_18 - accuracy: 0.8198 - avg categories 0.632
+- mjpk_19 - accuracy: 0.8514 - avg categories 0.668
 #### 2 dense layers size 20
 - mjpk_15 - accuracy: 0.8886 - avg categories 0.804
 - mjpk_16 - accuracy: 0.9041 - avg categories 0.797

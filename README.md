@@ -24,11 +24,10 @@ Times of the various points are calculated as offsets from the R(i-1) point of e
 MODEL NAME: 
 ```
 
-#### Major Peaks + middle points - 
+#### Major Peaks + 3 middle points - 21
 Same as above but in between two major peaks the middle point of the signal is added.
 NN inputs:
 - R(i-1) ampl only
-- R(i-1)-S(i-1) middle point ampl and time
 - S(i-1) ampl and time
 - S(i-1)-T(i-1) middle point ampl and time
 - T(i-1) ampl and time
@@ -36,9 +35,6 @@ NN inputs:
 - P(i) ampl and time
 - P(i)-Q(i) middle point ampl and time
 - Q(i) ampl and time
-- Q(i)-R(i) middle point ampl and time
 - R(i) ampl and time
-- R(i)-S(i) middle point ampl and time
 - S(i) ampl and time
-- S(i)-T(i) middle point ampl and time
 - T(i) ampl and time

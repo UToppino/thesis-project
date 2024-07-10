@@ -64,6 +64,41 @@ NN inputs:
 - T(i) ampl and time
 ```
 
+#### Multiple beats v1 - 19 features
+The extracted features belong to two different beats.
+
+NN inputs:
+```
+- R(i-2) ampl only
+- T(i-2) ampl and time
+- P(i-1) ampl and time
+- R(i-1) ampl and time
+- T(i-1) ampl and time
+- P(i) ampl and time
+- Q(i) ampl and time
+- R(i) ampl and time
+- S(i) ampl and time
+- T(i) ampl and time
+```
+
+#### Multiple beats v2 - 15 features
+Like the previous method, but the T and P peaks of the previous beat are removed. The idea is that only the amplitude and time of the R peak (and so the RR time) is needed
+
+NN inputs:
+```
+- R(i-2) ampl only
+- R(i-1) ampl and time
+- T(i-1) ampl and time
+- P(i) ampl and time
+- Q(i) ampl and time
+- R(i) ampl and time
+- S(i) ampl and time
+- T(i) ampl and time
+```
+
+#### Multiple beats v3 - 17 features
+An expansion of the v2 method. An additional beat is considered (i-3) and the amplitude and time of R(i-3) are provided
+
 ### KNN Networks
 #### Major Peaks (old system) - KNN - 12 features
 ```
@@ -130,4 +165,26 @@ Num features: 21
 14  17    0.659858     0.701349
 15  18    0.658376     0.697538
 16  19    0.656946     0.693732
-``` 
+```
+
+#### All points - 187 pts/beat
+```
+     K  Test Score  Train Score
+0    3    0.784120     0.903849
+1    4    0.788346     0.883752
+2    5    0.785270     0.869251
+3    6    0.782037     0.857141
+4    7    0.781152     0.847405
+5    8    0.775007     0.839027
+6    9    0.771242     0.830971
+7   10    0.765896     0.824527
+8   11    0.764168     0.817941
+9   12    0.761722     0.812988
+10  13    0.758812     0.807945
+11  14    0.756247     0.803636
+12  15    0.753874     0.799205
+13  16    0.751658     0.795307
+14  17    0.748242     0.791357
+15  18    0.745489     0.788013
+16  19    0.743943     0.784569
+```

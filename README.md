@@ -3,9 +3,23 @@
 
 ## Background
 
-#### ***TODO***: spiegare la struttura del battito cardiaco, le varie onde PQRST, le aritimie da classificare.
+#### ***TODO**: spiegare la struttura del battito cardiaco, le varie onde PQRST, le aritimie da classificare.*
 
 ## Summary
+### List of code files
+<details><summary><code>test_train_mlp</code></summary>
+   Extracts single heartbeats of fixed length centered around the R-peak. Trains the MLP classifier on the whole beat. 
+</details>
+<details><summary><code>test_train_mlp_peak_valley</code></summary>
+   Extracts single heartbeats of fixed length centered around the R-peak. Uses the peak/valley algorithm to extract N points. Trains the MLP classifier on the extracted points. 
+</details>
+<details><summary><code>test_peak_valley</code></summary>
+Testing and plotting of the peak/valley method on the whole ECG waveform. No training
+</details>
+
+***TODO***
+
+
 ### Progression of tests:
 - **Normalized dataset:**
    - **CNN + MLP**: Classic structure of convolution layers to extract features and MLP classification.
@@ -25,6 +39,9 @@
 ## Tests on normalized dataset
 
 #### CNN + MLP
+All heartbeats are already cut to a fixed size of 186 points and normalized to values between 0 and 1. 
+
+***TODO** Aggiungere file con risultati e struttura reti promettenti*
 
 #### Peak/Valley + MLP
 
@@ -41,6 +58,6 @@ Different selections of points are tested:
 - Multiple Beats v2 : 15 features
 - Multiple Beats v3 : 17 features
 
-Detailed selection of points for all versions at [Major Peaks + MLP](/docs/major_peaks_mlp.md)
+More details: [Major Peaks + MLP](/docs/major_peaks_mlp.md)
 
 The extracted features are used as input for the classifier, either MLP or KNN

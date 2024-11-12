@@ -1,3 +1,5 @@
+# Introduction
+
 ## Scope of the project
 The project aim is to develop and implement an efficient classifier for ECG signals in order to recognize different types of arrythmias. The ideal conclusion would be a trained model able to be implemented on the hardware platform described below. Many different routes were followed in order to reach the goal of the project and their results are presented and discussed in this thesis.
 
@@ -37,3 +39,7 @@ Each recording is digitized at 360 samples per second per channel with 11-bit re
 **Describe annotations of the dataset**
 
 **Describe other dataset derived by this one**
+
+## Dataset generation in python
+The dataset is downloaded from the PhysioNet site and it's accessible from the code using the wfdb library. Importing the code using the wfdb functions results in multiple numpy arrays containing the ECG recordings in mV as float numbers and arrays containing the annotations of the ECG signals. For the first few tests another dataset derived from the original one was used. 
+This second dataset consists of all the ECG heartbeats already cut to a fixed length of 187 samples, all of which are normalized with values between 0 and 1. 

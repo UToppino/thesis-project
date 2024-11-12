@@ -1,13 +1,13 @@
 # Thesis structure
 
-## Introduction
+## Chaper 0: Introduction
 ### ECG classification
 ### Hardware constraints
 ### Previous results
 ### Dataset explanation
 #### Dataset generation in python
 
-## CNN + MLP normalized dataset
+## Chapter 1: CNN + MLP normalized dataset
 ### Problems with using this method
 ### Results
 

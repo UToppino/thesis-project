@@ -1,2 +1,3 @@
 - [ ] check F-score of initial results
-- [ ] 
+- [ ] add "next steps" at the end
+- [ ] add SNN as possible solution

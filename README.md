@@ -16,6 +16,33 @@
 <details><summary><code>test_peak_valley</code></summary>
 Testing and plotting of the peak/valley method on the whole ECG waveform. No training
 </details>
+<details><summary><code> script_model_explore </code></summary>
+Print the confusion matrix and information about the structure for all trained models in a specific folder
+</details>
+<details><summary><code> test_feature_map </code></summary>
+Visualize the output of the internal convolution layers of a trained model and compares them to the input to the model
+</details>
+<details><summary><code> test_feature_map_knn </code></summary>
+This script takes a trained model and confronts the performance of the CNN+MLP model with a CNN+KNN model. The feature extraction made by the CNN is the same
+</details>
+
+<details><summary><code>  </code></summary>
+</details>
+
+</details>
+<details><summary><b>OLDER FILES</b></summary>
+
+<details><summary><code> test_autoenc_cnn </code></summary>
+Train a CNN model with an autoencoder structure using convolution and convolution transpose layers. Shows the performance and output of the model
+</details>
+<details><summary><code> test_autoenc_dense </code></summary>
+Train a MLP model with an autoencoder structure using fully connected layers. Shows the performance and output of the model
+</details>
+<details><summary><code> test_qrs_detect </code></summary>
+Applies different algorithms to extract the important peaks of the heartbeat. Uses QRS detection algorithm, P and T wave detection usign phasor transform.
+</details>
+
+</details>
 
 ***TODO***
 

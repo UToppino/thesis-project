@@ -71,6 +71,7 @@ All heartbeats are already cut to a fixed size of 186 points and normalized to v
 ***TODO** Aggiungere file con risultati e struttura reti promettenti*
 
 #### Peak/Valley + MLP
+Mode details: [Peak/Valley + MLP](/docs/peak_valley.md)
 
 ## Tests on original dataset
 
